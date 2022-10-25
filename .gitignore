@@ -1,0 +1,5 @@
+.clang/
+build/*
+tangos*
+kernel/compile_commands.json
+kernel/.cache

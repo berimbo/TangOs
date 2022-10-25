@@ -1,0 +1,23 @@
+Tangos
+============
+- A simple bootloader
+- A simple kernel
+
+Depedencies
+============
+- Build:
+	- GNU coreutils
+	- GNU find
+	- GNU gcc
+	- GNU ld
+
+- Emulate:
+	- Qemu
+
+- Install on drive:
+	- sudo
+
+Try it out
+============
+$ make run
+

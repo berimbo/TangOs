@@ -1,0 +1,11 @@
+#!/bin/bash
+
+[ $# -ne 2 ] && printf "2 arguments expected: installer [input file] [output file]\n" && exit 1
+IF=$1
+OF=$2
+! [ -e $IF ] && echo "Error: File $IF does not exist" && exit 1
+! [ -b $OF ] && echo "Error: File $OF does not exist or is not a block file" && exit 1
+read -p "Write $IF to $OF ? [Y/N]" confirm
+[ "$confirm" = "Y" ] && cat $IF > $OF && exit 0
+echo "Aborted"
+exit 0
